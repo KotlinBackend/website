@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #FFB900;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#logo {
+  font-size: 30px;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#hero {
+  background-color: #4285F4;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#content {
+  padding: 50px;
+}
+
+h1, h2 {
+  color: #FFB900;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* 加入動畫 */
+#hero {
+  position: relative;
+}
+
+#hero h1 {
+  animation: bounceInDown 1s ease-out;
+}
+
+#hero p {
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes bounceInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(10px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
