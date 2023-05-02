@@ -38,12 +38,9 @@ header {
   padding: 50px;
 }
 
-h1, h2 {
+.orange {
   color: #FFB900;
   text-align: center;
-}
-
-h1 {
   font-size: 60px;
   margin: 0;
 }
