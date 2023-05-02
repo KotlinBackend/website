@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-tw">
 
 <head>
     <meta charset="UTF-8">
@@ -17,26 +17,81 @@
     <meta property="og:height" content="301">
     <meta property="og:url" content="https://kotlinbackend.github.io/website/">
     <title>KotlinBackend</title>
-    <link rel="stylesheet" type="text/css" href="static/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
 </head>
 
 <body>
-    <header>
-        <div id="logo">KotlinBackend</div>
-        <div id="github">
-            <a href="https://github.com/KotlinBackend" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <!-- 導覽列 -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a id="logo" class="navbar-brand" href="#">KotlinBackend</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">特色</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">文件</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">社群</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GitHub</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <nav id="nav">
-            <a href="#">首頁</a>
-            <a href="#">關於我們</a>
-            <a href="#">聯絡我們</a>
-        </nav>
     </header>
     <section id="hero">
-        <h1>歡迎來到 KotlinBackend</h1>
+        <div class="orange">歡迎來到 KotlinBackend</div>
         <p>創造高效率的後端程式</p>
     </section>
+
+    <!-- 訂閱區塊 -->
+    <div class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>訂閱我們的電子報</h2>
+                    <p>訂閱我們的電子報，以獲得有關Kotlin框架的最新消息、教程和事件的更新。</p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col">
+                                <label>
+                                    <input type="text" class="form-control" placeholder="您的名字">
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label>
+                                    <input type="email" class="form-control" placeholder="您的電子郵件">
+                                </label>
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary">訂閱</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 腳部區塊 -->
+    <footer class="bg-light text-center py-3">
+        <p>版權所有 © 2023 Kotlin. 保留所有權利。</p>
+    </footer>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
